@@ -150,6 +150,16 @@
             <p>AI-powered budgeting mobile application</p>
           </div>
         </article>
+
+        <article class="project-tile" onclick="openProject('styleMate')">
+  <div class="project-image-box">
+    <img src="images/Style_Mate_Logo.png" alt="Style Mate cover" />
+  </div>
+  <div class="project-title-box">
+    <h3>Style Mate</h3>
+    <p>UI/UX Design – Outfit Recommendation App</p>
+  </div>
+</article>
       </div>
     </div>
   </section>
@@ -403,6 +413,166 @@ records or share reports if needed.</p>
         </div>
       </div>
     </div>
+
+    <!-- STYLE MATE PROJECT -->
+<div class="project-detail-panel" id="styleMateProject" style="display:none;">
+  <button class="close-btn" onclick="closeProject()">×</button>
+
+  <div class="project-detail-layout">
+    
+    <!-- SIDEBAR -->
+    <aside class="project-sidebar">
+      <img src="images/Style_Mate_Logo.png" class="project-logo" />
+      <h2>Style Mate</h2>
+      <p class="sidebar-subtitle">
+        UI/UX Design for Outfit Recommendation App
+      </p>
+
+      <div class="sidebar-nav">
+        <button class="nav-tab active" onclick="showTab('style-overview', this)">Overview</button>
+        <button class="nav-tab" onclick="showTab('style-screens', this)">Screens</button>
+        <button class="nav-tab" onclick="showTab('style-process', this)">Design Process</button>
+      </div>
+
+      <div class="sidebar-links">
+        <a href="https://www.figma.com/design/2kihdfmYlfxO6N8diF4PPQ/Style-Mate"
+           target="_blank"
+           class="sidebar-github-link">
+          View Figma Design
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="project-main">
+
+      <!-- OVERVIEW -->
+      <div id="style-overview" class="tab-content active">
+        <h3>Project Overview</h3>
+
+        <p class="justified">
+          Style Mate is a UI/UX design project focused on solving a common real-world problem:
+          selecting appropriate outfits for different occasions. The application provides
+          personalized outfit recommendations based on user preferences, selected events,
+          and environmental factors.
+        </p>
+
+        <p class="justified">
+          The design process followed a user-centered approach, including user research,
+          persona creation, user flows, wireframing, high-fidelity prototyping, and usability testing.
+        </p>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <h4>Target Users</h4>
+            <p>University students and young professionals.</p>
+          </div>
+
+          <div class="info-box">
+            <h4>Key Focus</h4>
+            <p>Reducing decision fatigue through intuitive UI and personalized recommendations.</p>
+          </div>
+
+          
+        </div>
+         <div class="workflow-box">
+  <h4>Happy Path User Flow</h4>
+
+  <p class="justified">
+    <b>The following represents the ideal user journey:</b>
+  </p>
+
+  <div class="flow-image-container">
+  <img src="images/Flow Style Mate.png" alt="Style Mate User Flow" class="flow-image" />
+</div>
+
+<br>
+<p class="justified">
+    This flow allows the user to smoothly reach their goal of obtaining outfit 
+recommendations with minimal effort.
+  </p>
+  <br>
+  <p class="justified">
+    <b>Edge Case User Flow:</b>
+  </p>
+
+  <div class="edge-flow-container">
+  <img src="images/Edge Case 1.png" alt="Edge Case Flow 1" class="edge-flow-image" />
+  <br>
+  <img src="images/Edge Case 2.png" alt="Edge Case Flow 2" class="edge-flow-image" />
+</div>
+<br>
+<p class="justified">
+    These flows ensure the application gracefully handles unexpected user behavior and 
+system limitations. 
+  </p>
+</div>
+      </div>
+
+      <!-- SCREENS -->
+      <div id="style-screens" class="tab-content">
+        <h3>UI Screens</h3>
+
+        <div class="gallery-grid">
+          <img src="images/Welcome Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Login Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Register Screen.png" onclick="openImage(this.src)" />
+          <img src="images/E-mail VerificationScreen.png" onclick="openImage(this.src)" />
+          <img src="images/Forgot Password.png" onclick="openImage(this.src)" />
+          <img src="images/Verify Code.png" onclick="openImage(this.src)" />
+          <img src="images/Set New Password.png" onclick="openImage(this.src)" />
+          <img src="images/Occasion Selection Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Mood Selection Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Outfit Recommendation Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Outfit Details Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Favourites Screen.png" onclick="openImage(this.src)" />
+          <img src="images/Preferences Screen.png" onclick="openImage(this.src)" />
+        </div>
+        </div>
+     
+
+      <!-- PROCESS -->
+      <div id="style-process" class="tab-content">
+        <h3>Design Process</h3>
+
+        <div class="feature-list">
+
+          <div class="feature-item">
+            <h4>User Research</h4>
+            <p>
+              Identified user pain points such as confusion in outfit selection,
+              time consumption, and lack of confidence.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <h4>Wireframing</h4>
+            <p>
+              Created low-fidelity wireframes to define layout and navigation flow.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <h4>High-Fidelity Prototype</h4>
+            <p>
+              Designed visually appealing UI using Figma with consistent colors,
+              typography, and interaction design.
+            </p>
+          </div>
+
+          <div class="feature-item">
+            <h4>Usability Testing</h4>
+            <p>
+              Conducted testing with users to evaluate usability and improve design decisions.
+            </p>
+          </div>
+
+        </div>
+      </div>
+ </div>
+    </div>
+  </div>
+</div>
   </div>
 
   <div class="image-overlay" id="imageOverlay" onclick="closeImage()">
