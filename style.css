@@ -314,6 +314,31 @@ section h2 {
   flex-wrap: wrap;
 }
 
+.flow-image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flow-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.edge-flow-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.edge-flow-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .text-link,
 .contact a {
   color: #17357a;
