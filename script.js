@@ -1,17 +1,21 @@
 function openProject(projectId) {
   const overlay = document.getElementById("projectOverlay");
+
+  // Hide all project panels
+  document.querySelectorAll(".project-detail-panel").forEach(p => {
+    p.style.display = "none";
+  });
+
+  // Show selected project
+  if (projectId === "budgetEase") {
+    document.querySelector(".project-detail-panel").style.display = "block";
+  }
+
+  if (projectId === "styleMate") {
+    document.getElementById("styleMateProject").style.display = "block";
+  }
+
   overlay.classList.add("active");
-  document.body.style.overflow = "hidden";
-
-  // Reset to overview tab whenever opening
-  const tabs = document.querySelectorAll(".nav-tab");
-  const contents = document.querySelectorAll(".tab-content");
-
-  tabs.forEach(tab => tab.classList.remove("active"));
-  contents.forEach(content => content.classList.remove("active"));
-
-  document.querySelector(".nav-tab").classList.add("active");
-  document.getElementById("overview").classList.add("active");
 }
 
 function closeProject() {
