@@ -1,130 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dhakshanyah Rajendra | Portfolio</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Dhakshanyah Rajendra | Portfolio
+  </title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- AOS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <p class="eyebrow">Portfolio • Mobile App Development • UI/UX • Web Development</p>
-        <h1>Dhakshanyah Rajendra</h1>
-        <p class="tagline">
-          IT Undergraduate at Rajarata University of Sri Lanka | Mobile App Development Enthusiast | IEEE RUSL Member
-        </p>
-        <p class="hero-summary">
-        </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
-        </div>
-      </div>
+  <!-- BACKGROUND GLOW -->
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
 
-      <div class="hero-image-wrap">
-        <img src="images/Dhakshanyah Rajendra Image.jpeg" alt="Dhakshanyah Rajendra" class="hero-image" />
-      </div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+
+      <div class="nav-logo">
+  R.Dhakshanyah
+</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
     </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+
+    <div class="container hero-grid">
+
+      <!-- LEFT -->
+      <div class="hero-text" data-aos="fade-right">
+
+        <div class="hero-badge">
+          AVAILABLE FOR INTERNSHIPS
+        </div>
+
+        <h1>
+          <span>Dhakshanyah Rajendra</span>
+        </h1>
+
+        <!-- <h2 class="hero-role">
+  AI Engineering • Software Engineering • App Development Enthusiast
+</h2> -->
+
+<h2 class="hero-role">
+  AI Engineering • App Development Enthusiast
+</h2>
+
+        <p class="hero-description">
+          IT Undergraduate specializing in
+          AI-powered applications,
+          Mobile App Development
+          <!--Software Engineering,
+          UI/UX Design,-->
+          and Modern Web Experiences.
+        </p>
+
+        <!--<div class="hero-buttons">
+  <a href="files/Dhakshanyah_Rajendra _AI_Intern.pdf"
+     download
+     class="btn btn-primary">
+     Download Resume
+  </a>
+</div> -->
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-image-area" data-aos="zoom-in">
+
+        <div class="hero-image-glow"></div>
+
+        <img
+          src="images/Dhaksha100.jpg"
+          alt="Dhakshanyah Rajendra"
+          class="hero-image"
+        />
+
+      </div>
+
+    </div>
+
   </header>
 
-  <section class="about section">
-    <div class="container">
-      <div class="section-heading">
-        <h2>About Me</h2>
+  <section id="about" class="about-section">
+
+  <div class="container">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-wrapper" id="aboutWrapper">
+
+      <!-- RIGHT CONTENT -->
+      <div class="about-content-preview">
+
+        <p>
+          Motivated IT undergraduate specializing in AI Engineering,
+          Mobile App Development, and Web Development. Passionate
+          about building intelligent, scalable, and user-focused
+          digital solutions.
+        </p>
+
+        <button
+          class="read-more-btn"
+          onclick="toggleAboutCard()"
+        >
+          Read More
+        </button>
+
       </div>
 
-      <div class="content-card">
-        <p class="justified">
-          Dedicated and ambitious IT undergraduate <b>specializing in Mobile App Development - Full-Stack 
-          Development, and strongly interested in Web Development, UI/UX Designing,</b> AI, 
-          machine learning, and intelligent systems. I have currently completed working on my 
-          final-year project, Budget Ease, personalized budgeting mobile application for 
-          university students.
-        </p>
+      <!-- EXPANDED CARD -->
+      <div class="about-full-card" id="aboutFullCard">
 
-        <p class="justified">
-          Along with my technical focus, I am deeply <b>interested in UI/UX Designing.</b> I continuously 
-          explore design principles, usability, user research, and modern design tools. 
-          I enjoy understanding user behavior and transforming that understanding into intuitive and 
-          meaningful digital experiences.
-        </p>
+        <div class="content-card" data-aos="fade-up">
 
-        <p class="justified">
-          In addition to mobile application development, I am also expanding my skills in <b>Web 
-          Development. </b> I am interested in building responsive and user-friendly web applications 
-          using modern technologies, and I enjoy creating clean, functional interfaces that enhance 
-          user experience across platforms.
-        </p>
-
-        <p class="justified">
-          I am highly motivated and eager to contribute to real-world mobile and web 
-          development projects, collaborate on UI/UX design solutions, and continuously grow as a 
-          developer and designer.
-        </p>
-
-        <div class="two-col-block">
-          <div>
-            <h3>Areas I Am Ready to Work In</h3>
-            <ul class="styled-list">
-              <li>Mobile App Development</li>
-              <li>Web Development</li>
-              <li>UI/UX Design and user-centered solutions</li>
-              <li>AI/ML model development</li>
-            </ul>
-          </div>
-
-          
-        </div>
-
-        <div class="achievements">
-          <h3>Key Achievements</h3>
-          <ul class="styled-list">
-            <li>Secured 3rd Place – Final Year Research Project – Personalized Budget Management 
-              Mobile Application for University Students</li>
-            <li>Secured 2nd Place – INSL North Central Provincial Competition 2025 
-              (Team Intellects) – Idea Stage</li>
-            <li>Secured 3rd Place – INSL North Central Provincial Competition 2024 and 
-              advanced to the Semi-Finals – Idea Stage (Team Unity Crew)</li>
-            <li>Finalist – IEEE Innovation Nation Sri Lanka 2024 – Idea Stage (Team Unity Crew)</li>
-            <li>Program Team Lead – INSL North Central Provincial Competition 2024</li>
-            <li>Active volunteer at IEEE RUSL – Design Team Member & Project Secretary of 
-              Frontiers in Tech Series 3.0 and 4.0</li>
-          </ul>
-        </div>
-        <div class="seeking-block">
-  <h3>Currently Seeking</h3>
   <p class="justified">
-    Internship opportunities in Mobile App Development, UI/UX Design, Web Development,
-    AI/ML, Software Engineering, or Industry Training.
+    Motivated IT undergraduate specializing in <b>AI Engineering, <!-- Software Engineering,-->
+    Mobile App Development, and Web Development.</b> Passionate about building intelligent, 
+    user-focused, and scalable digital solutions through modern technologies and clean design practices.
   </p>
-</div>
-      </div>
-    </div>
-  </section>
 
-  <section class="skills section">
+  <p class="justified">
+    Experienced in developing mobile and web applications, designing intuitive UI/UX experiences, 
+    and exploring AI and machine learning concepts. Strong interest in creating practical solutions 
+    that improve usability, efficiency, and user engagement.
+  </p>
+
+  <p class="justified">
+    Recently completed my final-year project, <b>Budget Ease</b>, an AI-powered personalized budgeting 
+    mobile application developed for university students.
+  </p>
+
+  <div class="two-col-block">
+
+    <div>
+      <h3>Areas of Interest</h3>
+
+      <ul class="styled-list">
+        <li>AI Engineering & Intelligent Systems</li>
+        <!--<li>Software Engineering</li> -->
+        <li>Mobile App Development</li>
+        <li>Web Application Development</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="achievements">
+
+    <h3>Key Achievements</h3>
+
+    <ul class="styled-list">
+      <li>3rd Place – Final Year Research Project – Budget Ease Mobile Application</li>
+
+      <li>2nd Place – INSL North Central Provincial Competition 2025 (Team Intellects)</li>
+
+      <li>3rd Place – INSL North Central Provincial Competition 2024 (Team Unity Crew)</li>
+
+      <li>Finalist – IEEE Innovation Nation Sri Lanka 2024</li>
+
+      <li>Program Team Lead – INSL North Central Provincial Competition 2024</li>
+
+      <li>Active IEEE RUSL Volunteer – Design Team & Project Coordination</li>
+    </ul>
+
+  </div>
+
+  <div class="seeking-block">
+
+    <h3>Currently Seeking</h3>
+
+    <p class="justified">
+      Internship or entry-level opportunities in AI Engineering, <!--Software Engineering, -->
+      Mobile App Development, or Web Application Development.
+    </p>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="skills section" id="skills">
     <div class="container">
       <div class="section-heading">
         <p class="section-label">Expertise</p>
         <h2>Skills</h2>
       </div>
 
-      <div class="skills-grid">
-        <div class="skill-card"><span>Flutter</span></div>
-        <div class="skill-card"><span>Dart</span></div>
-        <div class="skill-card"><span>React</span></div>
-        <div class="skill-card"><span>Node.js</span></div>
-        <div class="skill-card"><span>UI/UX Designing</span></div>
-        <div class="skill-card"><span>HTML</span></div>
-        <div class="skill-card"><span>CSS</span></div>
-        <div class="skill-card"><span>JavaScript</span></div>
-        <div class="skill-card"><span>Web Designing</span></div>
-        <div class="skill-card"><span>C/C++/Python</span></div>
-        <div class="skill-card"><span>AI/ML</span></div> 
-      </div>
+      <div class="modern-skills-grid">
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="100">
+    <h3>Programming Languages</h3>
+    <p>Python • Java • C • C++</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="200">
+    <h3>Web Development</h3>
+    <p>
+      Next.js • React.js • HTML • CSS • JavaScript •
+      TypeScript • Tailwind CSS
+    </p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="300">
+    <h3>Backend Development</h3>
+    <p>
+      Node.js • RESTful APIs • Authentication &
+      Authorization • CRUD Operations
+    </p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="400">
+    <h3>Database & ORM</h3>
+    <p>PostgreSQL • Prisma ORM</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="500">
+    <h3>Mobile App Development</h3>
+    <p>Flutter • Dart • Responsive UI Development</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="600">
+    <h3>AI & Machine Learning</h3>
+    <p>Neural Networks • Keras • Recommendation Systems</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="700">
+    <h3>UI/UX Design</h3>
+    <p>Figma • Wireframing • Prototyping</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="800">
+    <h3>Tools & Productivity</h3>
+    <p>Git • GitHub • VS Code</p>
+  </div>
+
+  <div class="skill-category-card" data-aos="fade-up" data-aos-delay="900">
+    <h3>Soft Skills</h3>
+    <p>Problem Solving • Teamwork • Communication • Leadership</p>
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -141,7 +307,8 @@
       </p>
 
       <div class="project-grid">
-        <article class="project-tile" onclick="openProject('budgetEase')">
+        <article class="project-tile"
+data-aos="fade-up" onclick="openProject('budgetEase')">
           <div class="project-image-box">
             <img src="images/Intellects_Logo.png" alt="Budget Ease cover" />
           </div>
@@ -151,7 +318,8 @@
           </div>
         </article>
 
-        <article class="project-tile" onclick="openProject('styleMate')">
+        <article class="project-tile"
+data-aos="fade-up" onclick="openProject('styleMate')">
   <div class="project-image-box">
     <img src="images/Style_Mate_Logo.png" alt="Style Mate cover" />
   </div>
@@ -171,7 +339,7 @@
         <h2>Contact</h2>
       </div>
 
-      <div class="contact-card">
+      <div class="contact-card" data-aos="fade-up">
         <p>
           <strong>Email:</strong>
           <a href="mailto:dhaksharajendra@gmail.com">dhaksharajendra@gmail.com</a>
@@ -198,8 +366,13 @@
   <div class="project-overlay" id="projectOverlay">
     <div class="overlay-backdrop" onclick="closeProject()"></div>
 
-    <div class="project-detail-panel">
-      <button class="close-btn" onclick="closeProject()">×</button>
+    <div
+  class="project-detail-panel"
+  id="budgetEaseProject"
+>
+      <button class="close-project" onclick="closeProject()">
+  ✕
+</button>
 
       <div class="project-detail-layout">
         <aside class="project-sidebar">
@@ -311,12 +484,24 @@
           </div>
 
           <div id="demo" class="tab-content">
-  <h3>Video Demonstration</h3>
+  <h2>Video Demonstration</h2>
 
-  <video controls class="demo-video">
-    <source src="videos/budget-demo-final.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div class="video-demo-card">
+
+  <img
+    src="images/Intellects_Logo.png"
+    alt="Budget Ease Video Thumbnail"
+    class="video-thumbnail"
+  />
+
+  <button
+    class="play-demo-btn"
+    onclick="openVideo('videos/budget-demo-final.mp4')"
+  >
+    ▶ Play Video Demonstration – Budget Ease
+  </button>
+
+</div>
 
   <div class="timeline-card">
     <h4>Demo Timeline Guide</h4>
@@ -416,7 +601,9 @@ records or share reports if needed.</p>
 
     <!-- STYLE MATE PROJECT -->
 <div class="project-detail-panel" id="styleMateProject" style="display:none;">
-  <button class="close-btn" onclick="closeProject()">×</button>
+  <button class="close-project" onclick="closeProject()">
+  ✕
+</button>
 
   <div class="project-detail-layout">
     
@@ -499,7 +686,9 @@ recommendations with minimal effort.
   <div class="edge-flow-container">
   <img src="images/Edge Case 1.png" alt="Edge Case Flow 1" class="edge-flow-image" />
   <br>
+  <div class="centered-image">
   <img src="images/Edge Case 2.png" alt="Edge Case Flow 2" class="edge-flow-image" />
+  </div>
 </div>
 <br>
 <p class="justified">
@@ -575,10 +764,44 @@ system limitations.
 </div>
   </div>
 
-  <div class="image-overlay" id="imageOverlay" onclick="closeImage()">
-  <span class="image-close">×</span>
-  <img class="image-overlay-content" id="overlayImage" alt="Full screenshot preview" />
+  <div id="imageOverlay" class="image-overlay">
+
+  <button class="image-close" onclick="closeImage()">
+    ✕
+  </button>
+
+  <button class="image-nav prev" onclick="previousImage()">
+    ❮
+  </button>
+
+  <img
+    id="overlayImage"
+    class="image-overlay-content"
+    alt="Full screenshot preview"
+  />
+
+  <button class="image-nav next" onclick="nextImage()">
+    ❯
+  </button>
+
 </div>
-  <script src="script.js"></script>
+  <!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 120
+  });
+</script>
+
+<script src="script.js"></script>
+<!-- VIDEO OVERLAY -->
+
+<div id="videoOverlay" class="video-overlay">
+  <button class="video-close" onclick="closeVideo()">✕</button>
+  <video id="overlayVideo" class="overlay-video-player" controls playsinline></video>
+</div>
 </body>
 </html>
