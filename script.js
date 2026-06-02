@@ -53,6 +53,13 @@ function openProject(projectId) {
     ).style.display = "block";
   }
 
+  if (projectId === "studentSphere") {
+
+  document.getElementById(
+    "studentSphereProject"
+  ).style.display = "block";
+}
+
   overlay.classList.add("active");
 
   document.body.style.overflow = "hidden";

@@ -328,6 +328,24 @@ data-aos="fade-up" onclick="openProject('styleMate')">
     <p>UI/UX Design – Outfit Recommendation App</p>
   </div>
 </article>
+
+<article class="project-tile"
+data-aos="fade-up"
+onclick="openProject('studentSphere')">
+
+  <div class="project-image-box">
+    <img
+      src="images/Student_Sphere.png"
+      alt="Student Sphere AI cover"
+    />
+  </div>
+
+  <div class="project-title-box">
+    <h3>Student Sphere AI</h3>
+    <p>Student Support Chatbot - Web Application</p>
+  </div>
+
+</article>
       </div>
     </div>
   </section>
@@ -761,8 +779,309 @@ system limitations.
  </div>
     </div>
   </div>
-</div>
+<!-- STUDENT SPHERE AI PROJECT -->
+<div
+class="project-detail-panel"
+id="studentSphereProject"
+style="display:none;"
+>
+
+<button class="close-project" onclick="closeProject()">
+✕
+</button>
+
+<div class="project-detail-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="project-sidebar">
+
+    <img
+      src="images/Student_Sphere.png"
+      class="project-logo"
+    />
+
+    <h2>Student Sphere AI</h2>
+
+    <p class="sidebar-subtitle">
+      AI-Powered Student Support Chatbot
+    </p>
+
+    <div class="sidebar-nav">
+
+      <button
+        class="nav-tab active"
+        onclick="showTab('student-overview', this)">
+        Overview
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('student-screens', this)">
+        Screenshots
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('student-architecture', this)">
+        Architecture
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('student-features', this)">
+        Features
+      </button>
+
+    </div>
+
+    <div class="sidebar-links">
+
+      <a
+        href="https://github.com/Dhaksha28Rajendra/AI-Student-Support-Chatbot"
+        target="_blank"
+        class="sidebar-github-link"
+      >
+        View on GitHub
+      </a>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="project-main">
+
+    <!-- OVERVIEW -->
+    <div id="student-overview" class="tab-content active">
+
+      <h3>Project Overview</h3>
+
+      <p class="justified">
+        Student Sphere AI is a full-stack intelligent student support
+        chatbot designed to help students obtain academic information,
+        explanations, learning support, and general knowledge assistance
+        through natural language conversations.
+      </p>
+
+      <p class="justified">
+        The system integrates Google Gemini AI with a React frontend
+        and FastAPI backend to provide real-time AI-generated responses
+        through a modern ChatGPT-inspired user interface.
+      </p>
+
+      <div class="info-grid">
+
+        <div class="info-box">
+          <h4>Target Users</h4>
+          <p>
+            University students seeking academic guidance,
+            explanations, learning assistance, and intelligent
+            conversational support.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h4>Key Innovation</h4>
+          <p>
+            Multi-chat conversation management, AI-powered responses,
+            smart conversation titles, file attachments,
+            dark mode, chat export, and persistent chat history.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="workflow-box">
+
+        <h4>System Workflow</h4>
+
+        <p class="justified">
+          Students interact with the chatbot through a modern
+          conversational interface. User prompts are sent
+          from the React frontend to the FastAPI backend,
+          which communicates with Google's Gemini AI model.
+        </p>
+
+        <p class="justified">
+          Responses are generated in real time and displayed
+          within the chat interface while maintaining
+          conversational context across multiple interactions.
+        </p>
+
+        <p class="justified">
+          Conversations are automatically saved using local
+          storage, allowing users to continue previous chats,
+          export discussions, manage multiple chat sessions,
+          and maintain a personalized learning experience.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <div id="student-screens" class="tab-content">
+
+      <h3>Application Screenshots</h3>
+
+      <p>
+        Click any screenshot to view full size.
+      </p>
+
+      <div class="student-gallery">
+
+        <img src="images/student1.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student2.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student3.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student4.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student5.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student6.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student7.png"
+             onclick="openImage(this.src)" />
+
+        <img src="images/student8.png"
+             onclick="openImage(this.src)" />
+
+      </div>
+
+    </div>
+
+    <!-- ARCHITECTURE -->
+    <div id="student-architecture" class="tab-content">
+
+      <h3>Technology Stack & Architecture</h3>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <h4>Frontend</h4>
+          <p>
+            React.js, JavaScript (ES6+), Axios,
+            React Markdown, CSS3
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Backend</h4>
+          <p>
+            FastAPI, Pydantic, Uvicorn
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Artificial Intelligence</h4>
+          <p>
+            Google Gemini 2.5 Flash
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Storage</h4>
+          <p>
+            Browser Local Storage for chat history,
+            conversation metadata, themes,
+            and user preferences.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div id="student-features" class="tab-content">
+
+      <h3>Core Features</h3>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <h4>AI-Powered Conversations</h4>
+          <p>
+            Context-aware responses using Google Gemini AI
+            with multi-turn conversational support.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Multi-Chat Management</h4>
+          <p>
+            Create, rename, delete, search,
+            and manage multiple chat sessions.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Smart Conversation Titles</h4>
+          <p>
+            Automatic title generation based on
+            conversation content.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>File Attachments</h4>
+          <p>
+            Support for images, PDFs,
+            Word documents, text files,
+            audio, and video uploads.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Dark & Light Themes</h4>
+          <p>
+            Theme switching with automatic
+            preference persistence.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Typing Indicators</h4>
+          <p>
+            Dynamic response generation animations
+            for improved user experience.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Chat Export</h4>
+          <p>
+            Export conversations as downloadable
+            text files.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Local Persistence</h4>
+          <p>
+            Automatic storage of conversations,
+            settings, and preferences using
+            browser local storage.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
+</div>
+</div>
+</div>
 
   <div id="imageOverlay" class="image-overlay">
 
