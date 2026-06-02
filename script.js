@@ -91,7 +91,7 @@ let currentImageIndex = 0;
 
 let galleryImages = [];
 
-function openImage(src) {
+function openImage(img) {
 
   const overlay =
     document.getElementById("imageOverlay");
@@ -99,16 +99,19 @@ function openImage(src) {
   const image =
     document.getElementById("overlayImage");
 
+  const currentGallery =
+    img.closest(
+      ".gallery-grid, .student-gallery"
+    );
+
   galleryImages = Array.from(
-    document.querySelectorAll(".gallery-grid img")
+    currentGallery.querySelectorAll("img")
   );
 
   currentImageIndex =
-    galleryImages.findIndex(
-      img => img.src.includes(src)
-    );
+    galleryImages.indexOf(img);
 
-  image.src = src;
+  image.src = img.src;
 
   overlay.classList.add("active");
 
