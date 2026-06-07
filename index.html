@@ -260,7 +260,7 @@
         </p>
 
         <p>
-          BSc in Information and Communication Technology
+          BSc in Information and Communication Technology (Reading)
         </p>
 
       </div>
@@ -311,6 +311,9 @@
 
         <p>
           G.C.E Ordinary Level
+        </p>
+        <p>
+          Senior Head Prefect - 2017
         </p>
 
       </div>
@@ -437,6 +440,19 @@ onclick="openProject('studentSphere')">
   </div>
 
 </article>
+        <article class="project-tile"
+data-aos="fade-up" onclick="openProject('groceryGo')">
+          <div class="project-image-box">
+            <img src="images/GroceryGo.png" alt="GroceryGo cover" />
+          </div>
+          <div class="project-title-box">
+            <h3>GroceryGo</h3>
+            <p>Smart Online Grocery Shopping Platform</p>
+            <p style="font-size:0.8rem; font-weight:700; color:#4ade80; margin-top:8px;">
+              Currently Developing
+            </p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -1234,6 +1250,214 @@ style="display:none;"
 
 </div>
 </div>
+<!-- GROCERYGO PROJECT -->
+<div
+class="project-detail-panel"
+id="groceryGoProject"
+style="display:none;"
+>
+
+<button class="close-project" onclick="closeProject()">
+✕
+</button>
+
+<div class="project-detail-layout">
+
+  <aside class="project-sidebar">
+    <img src="images/GroceryGo.png" alt="GroceryGo logo" class="project-logo" />
+    <h2>GroceryGo</h2>
+    <p class="sidebar-subtitle">Smart Online Grocery Shopping Platform</p>
+
+    <div class="sidebar-nav">
+      <button class="nav-tab active" onclick="showTab('grocery-overview', this)">Overview</button>
+      <button class="nav-tab" onclick="showTab('grocery-features', this)">Core Features</button>
+      <button class="nav-tab" onclick="showTab('grocery-tech', this)">Technology Stack</button>
+      <button class="nav-tab" onclick="showTab('grocery-architecture', this)">Architecture</button>
+      <button class="nav-tab" onclick="showTab('grocery-future', this)">Future Improvements</button>
+    </div>
+
+    <div class="sidebar-links">
+      <a href="#" onclick="return false;" class="sidebar-github-link">
+        Repository Coming Soon
+      </a>
+    </div>
+  </aside>
+
+  <div class="project-main">
+
+    <div id="grocery-overview" class="tab-content active">
+      <h3>Project Overview</h3>
+
+      <p class="justified">
+        GroceryGo is a modern online grocery shopping platform designed to simplify the process of purchasing daily household and grocery items through a convenient digital experience.
+      </p>
+
+      <p class="justified">
+        The application enables users to browse products, search for items, manage shopping carts, place orders, and track purchases through an intuitive and responsive interface.
+      </p>
+
+      <p class="justified">
+        This project is currently under active development, and the portfolio will be updated as new modules and features are completed.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h4>Project Status</h4>
+          <p class="justified">
+            Currently Working On It
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h4>Target Users</h4>
+          <p class="justified">
+            Customers, Store Owners, and Administrators.
+          </p>
+        </div>
+      </div>
+
+      <div class="workflow-box">
+        <h4>Proposed Solution</h4>
+        <p class="justified">
+          GroceryGo provides a centralized online platform where users can register and manage accounts, browse grocery categories, search products instantly, view product details, add products to cart, manage quantities, place grocery orders, track order status, and review purchase history.
+        </p>
+      </div>
+    </div>
+
+    <div id="grocery-features" class="tab-content">
+      <h3>Core Features</h3>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <h4>Authentication Module</h4>
+          <p class="justified">User registration, login, logout, and password reset.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Product Browsing</h4>
+          <p class="justified">Category-based browsing, product cards, and product details.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Search System</h4>
+          <p class="justified">Keyword search, product filtering, and category filtering.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Shopping Cart</h4>
+          <p class="justified">Add products, remove products, update quantities, and calculate totals.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Checkout System</h4>
+          <p class="justified">Address selection, order summary, and order confirmation.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Order Management</h4>
+          <p class="justified">Order history and order status tracking.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>User Profile</h4>
+          <p class="justified">Update profile, manage addresses, and view purchases.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="grocery-tech" class="tab-content">
+      <h3>Technology Stack</h3>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <h4>Frontend</h4>
+          <p class="justified">React, TypeScript, Tailwind CSS, Vite</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Backend</h4>
+          <p class="justified">Supabase Authentication, PostgreSQL Database, Storage, and APIs</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>State Management</h4>
+          <p class="justified">Zustand</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Deployment</h4>
+          <p class="justified">Vercel and Supabase</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="grocery-architecture" class="tab-content">
+      <h3>System Architecture</h3>
+
+      <div class="workflow-box">
+        <h4>Flow</h4>
+        <p class="justified">
+          User → React Frontend → Supabase Services → Authentication / PostgreSQL / Storage / APIs → Data Retrieval → User Interface
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h4>Database Focus</h4>
+          <p class="justified">
+            Users, categories, products, cart items, and orders are organized to support a scalable shopping workflow.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h4>Security Features</h4>
+          <p class="justified">
+            Secure authentication, JWT-based sessions, password encryption, protected routes, input validation, and database access policies.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="grocery-future" class="tab-content">
+      <h3>Future Improvements</h3>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <h4>AI Product Recommendation</h4>
+          <p class="justified">Personalized recommendations based on shopping history.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Voice Search</h4>
+          <p class="justified">Search products using voice commands.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Smart Shopping Assistant</h4>
+          <p class="justified">An AI chatbot for product inquiries, order status, and shopping guidance.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Real-Time Delivery Tracking</h4>
+          <p class="justified">Live order tracking on a map.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Digital Payments</h4>
+          <p class="justified">Integration with Visa, Mastercard, PayPal, and local payment gateways.</p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Progressive Web App</h4>
+          <p class="justified">Browser-based installation for a mobile-like experience.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
 </div>
 
   <div id="imageOverlay" class="image-overlay">
@@ -1269,6 +1493,34 @@ style="display:none;"
 </script>
 
 <script src="script.js"></script>
+<script>
+  (function () {
+    const existingOpenProject = window.openProject;
+
+    window.openProject = function (projectId) {
+      if (projectId === "groceryGo") {
+        const overlay = document.getElementById("projectOverlay");
+
+        document.querySelectorAll(".project-detail-panel").forEach(project => {
+          project.style.display = "none";
+        });
+
+        const project = document.getElementById("groceryGoProject");
+        if (project) {
+          project.style.display = "block";
+        }
+
+        overlay.classList.add("active");
+        document.body.style.overflow = "hidden";
+        return;
+      }
+
+      if (typeof existingOpenProject === "function") {
+        return existingOpenProject(projectId);
+      }
+    };
+  })();
+</script>
 <!-- VIDEO OVERLAY -->
 
 <div id="videoOverlay" class="video-overlay">

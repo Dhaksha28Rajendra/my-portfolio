@@ -60,6 +60,13 @@ function openProject(projectId) {
   ).style.display = "block";
 }
 
+if (projectId === "groceryGo") {
+
+  document.getElementById(
+    "groceryGoProject"
+  ).style.display = "block";
+}
+
   overlay.classList.add("active");
 
   document.body.style.overflow = "hidden";
