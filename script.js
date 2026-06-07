@@ -101,15 +101,25 @@ function openImage(img) {
 
   const currentGallery =
     img.closest(
-      ".gallery-grid, .student-gallery"
+      ".gallery-grid, .student-gallery, .certification-grid"
     );
 
-  galleryImages = Array.from(
-    currentGallery.querySelectorAll("img")
-  );
+  if(currentGallery){
 
-  currentImageIndex =
-    galleryImages.indexOf(img);
+    galleryImages = Array.from(
+      currentGallery.querySelectorAll("img")
+    );
+
+    currentImageIndex =
+      galleryImages.indexOf(img);
+
+  } else {
+
+    galleryImages = [img];
+
+    currentImageIndex = 0;
+
+  }
 
   image.src = img.src;
 

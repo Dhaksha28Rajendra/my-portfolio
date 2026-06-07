@@ -1772,3 +1772,132 @@ overflow:hidden;
 .student-gallery img:hover{
   transform:scale(1.02);
 }
+
+.education-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap:30px;
+
+  margin-top:40px;
+}
+
+.education-card{
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  padding:30px;
+
+  text-align:center;
+
+  backdrop-filter:blur(16px);
+
+  transition:0.3s ease;
+}
+
+.education-card:hover{
+
+  transform:translateY(-8px);
+}
+
+.education-logo{
+
+  width:100px;
+
+  height:100px;
+
+  object-fit:contain;
+
+  margin:0 auto 20px;
+}
+
+.education-year{
+
+  color:#93c5fd;
+
+  font-weight:600;
+
+  margin:12px 0;
+}
+
+.certification-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(2,1fr);
+
+  gap:30px;
+
+  margin-top:40px;
+}
+
+.certificate-card{
+
+  background:rgba(255,255,255,0.05);
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  border-radius:28px;
+
+  padding:20px;
+
+  text-align:center;
+
+  backdrop-filter:blur(16px);
+}
+
+.certificate-card img{
+
+  width:100%;
+
+  height:320px;
+
+  object-fit:cover;
+
+  border-radius:18px;
+
+  cursor:pointer;
+
+  margin-bottom:20px;
+}
+
+.certificate-card h3{
+
+  margin-bottom:10px;
+}
+
+@media(max-width:992px){
+
+  .education-grid{
+    grid-template-columns:1fr;
+  }
+
+  .certification-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+.certificate-card img{
+    cursor:pointer;
+}
+
+.certificate-card img{
+
+  transition:0.3s ease;
+
+}
+
+.certificate-card img:hover{
+
+  transform:scale(1.03);
+
+}
