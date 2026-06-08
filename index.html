@@ -453,6 +453,27 @@ data-aos="fade-up" onclick="openProject('groceryGo')">
             </p>
           </div>
         </article>
+
+<article class="project-tile"
+data-aos="fade-up"
+onclick="openProject('learnLens')">
+
+  <div class="project-image-box">
+    <img
+      src="images/LearnerLens.png"
+      alt="LearnLens AI cover"
+    />
+  </div>
+
+  <div class="project-title-box">
+    <h3>LearnLens AI</h3>
+    <p>Intelligent Study Material Summarization &amp; Learning Assistant</p>
+    <p style="font-size:0.8rem; font-weight:700; color:#4ade80; margin-top:8px;">
+      Currently Developing
+    </p>
+  </div>
+
+</article>
       </div>
     </div>
   </section>
@@ -485,7 +506,7 @@ id="certifications">
     </h3>
 
     <p>
-      Budget Ease – Reinforcement Learning Enabled
+      Budget Ease – AI-Powered
       Budgeting Solution for University Students
     </p>
 
@@ -1458,6 +1479,288 @@ style="display:none;"
 
 </div>
 </div>
+<!-- LEARNLENS AI PROJECT -->
+<div
+class="project-detail-panel"
+id="learnLensProject"
+style="display:none;"
+>
+
+<button class="close-project" onclick="closeProject()">
+✕
+</button>
+
+<div class="project-detail-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="project-sidebar">
+
+    <img
+      src="images/LearnerLens.png"
+      class="project-logo"
+      alt="LearnLens AI logo"
+    />
+
+    <h2>LearnLens AI</h2>
+
+    <p class="sidebar-subtitle">
+      AI-Powered Study Material Summarization &amp; Learning Assistant
+    </p>
+
+    <div class="sidebar-nav">
+
+      <button
+        class="nav-tab active"
+        onclick="showTab('learn-overview', this)">
+        Overview
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('learn-architecture', this)">
+        Architecture
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('learn-features', this)">
+        Features
+      </button>
+
+      <button
+        class="nav-tab"
+        onclick="showTab('learn-future', this)">
+        Future Scope
+      </button>
+
+    </div>
+
+    <div class="sidebar-links">
+
+      <a
+        href="#"
+        onclick="return false;"
+        class="sidebar-github-link"
+      >
+        Currently Under Development
+      </a>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="project-main">
+
+    <!-- OVERVIEW -->
+    <div id="learn-overview" class="tab-content active">
+
+      <h3>Project Overview</h3>
+
+      <p class="justified">
+        LearnLens AI is an AI-powered educational web application currently under development to help university students study more efficiently by transforming lengthy study materials into concise and easy-to-understand learning resources.
+      </p>
+
+      <p class="justified">
+        Students can upload lecture notes, PDFs, research papers, and study documents, and the system automatically extracts important information using advanced AI models. The platform generates summaries, key points, flashcards, important definitions, and exam-focused questions to support effective studying and revision.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h4>Target Users</h4>
+          <p>
+            University students, college students, teachers, researchers, and academic tutors.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h4>Current Status</h4>
+          <p>
+            Actively developing as a full-stack AI-powered learning assistant.
+          </p>
+        </div>
+      </div>
+
+      <div class="workflow-box">
+        <h4>Proposed Solution</h4>
+        <p class="justified">
+          LearnLens AI provides an automated academic assistance platform that uses artificial intelligence and natural language processing to process educational content. By automating summarization, key concept extraction, flashcard generation, and exam question creation, the platform helps students focus more on understanding concepts rather than manually organizing information.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ARCHITECTURE -->
+    <div id="learn-architecture" class="tab-content">
+
+      <h3>System Architecture &amp; Technology Stack</h3>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <h4>Frontend</h4>
+          <p>
+            React.js, Tailwind CSS, Axios
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Backend</h4>
+          <p>
+            Flask, Flask-CORS, SQLAlchemy
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Artificial Intelligence</h4>
+          <p>
+            OpenAI API for summarization, flashcard generation, exam question generation, and key point extraction.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Document Processing</h4>
+          <p>
+            pdfplumber for PDF extraction and python-docx for DOCX extraction.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Database</h4>
+          <p>
+            PostgreSQL on Supabase for user management, summaries, study history, and generated resources.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div id="learn-features" class="tab-content">
+
+      <h3>Core Features</h3>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <h4>Document Upload</h4>
+          <p>
+            Supports PDF, DOCX, and TXT files.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>AI Summarization</h4>
+          <p>
+            Generates short, medium, and detailed summaries.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Key Points Extraction</h4>
+          <p>
+            Automatically identifies main concepts, important topics, and critical information.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Important Definitions</h4>
+          <p>
+            Extracts definitions, academic terminology, and concept explanations.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Flashcard Generation</h4>
+          <p>
+            Creates question-and-answer flashcards for revision.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Exam Question Generation</h4>
+          <p>
+            Generates short-answer, long-answer, and revision questions.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>User Authentication</h4>
+          <p>
+            Registration, login, and profile management.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Study History</h4>
+          <p>
+            Stores uploaded documents, summaries, flashcards, and generated questions.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FUTURE SCOPE -->
+    <div id="learn-future" class="tab-content">
+
+      <h3>Future Improvements</h3>
+
+      <div class="feature-list">
+
+        <div class="feature-item">
+          <h4>AI Chat With Uploaded Notes</h4>
+          <p>
+            Students will be able to ask questions directly about uploaded material.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Voice-Based Learning</h4>
+          <p>
+            Convert summaries into audio for easier revision.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Multi-Language Support</h4>
+          <p>
+            English, Sinhala, and Tamil support.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Quiz Generator</h4>
+          <p>
+            Generates MCQs, true/false questions, and fill-in-the-blanks.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Study Progress Tracking</h4>
+          <p>
+            Tracks revision history, reading activity, and performance metrics.
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <h4>Collaborative Learning</h4>
+          <p>
+            Share notes, flashcards, and summaries with other students.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>
 </div>
 
   <div id="imageOverlay" class="image-overlay">
@@ -1498,14 +1801,19 @@ style="display:none;"
     const existingOpenProject = window.openProject;
 
     window.openProject = function (projectId) {
-      if (projectId === "groceryGo") {
+      if (projectId === "groceryGo" || projectId === "learnLens") {
         const overlay = document.getElementById("projectOverlay");
 
         document.querySelectorAll(".project-detail-panel").forEach(project => {
           project.style.display = "none";
         });
 
-        const project = document.getElementById("groceryGoProject");
+        const panelId =
+          projectId === "groceryGo"
+            ? "groceryGoProject"
+            : "learnLensProject";
+
+        const project = document.getElementById(panelId);
         if (project) {
           project.style.display = "block";
         }

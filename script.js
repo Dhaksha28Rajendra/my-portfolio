@@ -67,6 +67,13 @@ if (projectId === "groceryGo") {
   ).style.display = "block";
 }
 
+if (projectId === "learnLens") {
+
+  document.getElementById(
+    "learnLensProject"
+  ).style.display = "block";
+
+}
   overlay.classList.add("active");
 
   document.body.style.overflow = "hidden";
