@@ -74,6 +74,14 @@ if (projectId === "learnLens") {
   ).style.display = "block";
 
 }
+
+if (projectId === "rehearseU") {
+
+  document.getElementById(
+    "rehearseUProject"
+  ).style.display = "block";
+
+}
   overlay.classList.add("active");
 
   document.body.style.overflow = "hidden";
