@@ -403,3 +403,74 @@ function toggleAboutCard() {
   button.style.animation = "none";
 
 }
+
+/* =========================================
+   ACHIEVEMENTS TOGGLE
+   ========================================= */
+
+function toggleAchievements() {
+
+  const achievementsCard =
+    document.getElementById("achievementsFullCard");
+
+  const toggleButton =
+    document.getElementById("achievementsToggleBtn");
+
+
+  if (!achievementsCard) {
+    return;
+  }
+
+
+  const isExpanded =
+    achievementsCard.classList.contains("show");
+
+
+  if (isExpanded) {
+
+    achievementsCard.classList.remove("show");
+
+    toggleButton.textContent = "View More";
+
+  } else {
+
+    achievementsCard.classList.add("show");
+
+    toggleButton.textContent = "View Less";
+
+  }
+
+}
+
+/* =========================================
+   LEADERSHIP & INVOLVEMENT TOGGLE
+   ========================================= */
+
+function toggleLeadership() {
+
+    const fullCard = document.getElementById("leadershipFullCard");
+    const toggleBtn = document.getElementById("leadershipToggleBtn");
+
+    if (!fullCard || !toggleBtn) return;
+
+    const isOpen = fullCard.style.display === "block";
+
+    if (isOpen) {
+
+        fullCard.style.display = "none";
+        toggleBtn.textContent = "View More";
+
+    } else {
+
+        fullCard.style.display = "block";
+        toggleBtn.textContent = "View Less";
+
+        setTimeout(() => {
+            fullCard.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 100);
+
+    }
+}
